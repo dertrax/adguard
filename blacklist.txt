@@ -1,5 +1,5 @@
 # Lista negra propia para AdGuard Home
-# Generada a partir de consultas permitidas del cliente Casa, revisión 2026-09-07.
+# revisión 2026-09-07.
 # Sólo contiene telemetría, publicidad o analítica de alta confianza.
 
 # Microsoft: telemetría y eventos
