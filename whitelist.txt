@@ -319,6 +319,7 @@
 @@||vidtech.cbsinteractive.com^
 @@||virustotal.com^
 @@||welcome.opendns.com^
+@@||opendns.com^
 @@||wp.com^
 @@||ws.audioscrobbler.com^
 @@||www.docker.com^
