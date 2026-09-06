@@ -1,45 +1,27 @@
-!
-! Title: Whitelist personalizada - AdGuard Home
-! Description: Lista unificada de excepciones (allowlist) fusionando la lista
-!              personal del usuario y la whitelist de terceros,
-!              deduplicada y organizada por categoria.
-! Last modified: 2026-08-16
-!
+# Lista blanca revisada para AdGuard Home
+# revisión 2026-09-07.
+# Se eliminaron excepciones globales de proveedores DNS, dominios amplios
+# que anulaban filtros de telemetría y excepciones analíticas conocidas.
 
-! ---- DNS, resolvers y proveedores de red core ----
-@@||cloudflare-dns.com^$important
 @@||cloudns.net^
 @@||connectivity-check.ubuntu.com^
 @@||connectivitycheck.android.com^
 @@||connectivitycheck.gstatic.com^
-@@||dns.google^
 @@||dns.msftncsi.com^
 @@||ipv6.msftconnecttest.com^
 @@||msftconnecttest.com^
 @@||msftncsi.com^
-@@||mullvad.net^
-@@||one.one.one.one^$important
 @@||proto.on.quad9.net^
-@@||quad9.net^$important
 @@||www.msftconnecttest.com^
 @@||www.msftncsi.com^
-
-! ---- VPN, acceso remoto y herramientas propias ----
 @@||asocks.com^$important
 @@||dataplicity.com^
 @@||location.mysterium.network^$important
 @@||mysteriumvpn.com^$important
 @@||zerotier.com^$important
-
-! ---- Banca, hosting y administracion publica ----
 @@||gencat.*^
-@@||ing.*^
-@@||ingspain.*^
 @@||ovh.*^
 @@||ovhcloud.*^
-
-! ---- Apple / iCloud / iOS ----
-@@||apple.com^$important
 @@||appleid.apple.com^
 @@||apps.apple.com^
 @@||ax.phobos.apple.com.edgesuite.net^
@@ -50,7 +32,6 @@
 @@||configuration.apple.com.akadns.net^
 @@||gateway.icloud.com^
 @@||help.apple.com^
-@@||icloud.*^
 @@||idmsa.apple.com^
 @@||idmsa.idms-apple.com.akadns.net^
 @@||inappcheck.itunes.apple.com^
@@ -64,8 +45,6 @@
 @@||time.apple.com^
 @@||www.apple.com^
 @@||xp.apple.com^
-
-! ---- Microsoft / Windows / Office / Xbox ----
 @@||admin.cloud.microsoft^
 @@||aka.ms^
 @@||apps.skype.com^
@@ -90,9 +69,7 @@
 @@||live.com^
 @@||login.live.com^
 @@||login.microsoftonline.com^
-@@||microsoft.com^$important
 @@||microsoftonline.com^
-@@||mobile.pipe.aria.microsoft.com^
 @@||nexusrules.officeapps.live.com^
 @@||notify.xboxlive.com^
 @@||office.com^
@@ -118,11 +95,8 @@
 @@||xkms.xboxlive.com^
 @@||xsts.auth.xboxlive.com^
 @@||ztd.dds.microsoft.com^
-
-! ---- Google / Android / YouTube ----
 @@||0.client-channel.google.com^
 @@||2.android.pool.ntp.org^
-@@||analytics.google.com^$important
 @@||android.clients.google.com^
 @@||android.com^
 @@||android.googleapis.com^
@@ -139,7 +113,6 @@
 @@||familylink.google.com^
 @@||fonts.gstatic.com^
 @@||geo3.ggpht.com^
-@@||googleapis.com^
 @@||gstatic.com^
 @@||i.ytimg.com^
 @@||i1.ytimg.com^
@@ -154,28 +127,14 @@
 @@||s.youtube.com^
 @@||s.ytimg.com^
 @@||s2.youtube.com^
-@@||tagmanager.google.com^$important
-@@||video-stats.l.google.com^
-@@||www.googleapis.com^
-@@||www.googletagmanager.com^$important
 @@||www.youtube-nocookie.com^
 @@||youtube-nocookie.com^
 @@||yt3.ggpht.com^
-
-! ---- Adobe y herramientas de trabajo ----
-@@||adobe.com^$important
 @@||cc-api-data.adobe.io^$important
 @@||commander1.com^$important
 @@||invitations.adobe.io^$important
-
-! ---- LG Smart TV ----
 @@||lge-static.ottera.tv^$important
-@@||lge.com^$important
-@@||lgtvcommon.com^$important
-
-! ---- Streaming, medios y entretenimiento ----
 @@||3cat.cat^
-@@||amazon.com^$important
 @@||apt.sonarr.tv^
 @@||cpms.spop10.ams.plex.bz^
 @@||cpms35.spop10.ams.plex.bz^
@@ -202,7 +161,6 @@
 @@||repo.jellyfin.org^
 @@||services.sonarr.tv^
 @@||skyhook.sonarr.tv^
-@@||skyshowtimeuk.*^
 @@||staging.plex.tv^
 @@||status.plex.tv^
 @@||taobao.com^
@@ -212,24 +170,17 @@
 @@||tvthemes.plexapp.com^
 @@||www.jellyfin.org^
 @@||youboranqs01.com^
-
-! ---- CDN y entrega de contenido generica ----
-@@||a.nel.cloudflare.com^$important
 @@||akamai.net^
 @@||akamaiedge.net^
 @@||akamaihd.net^
 @@||akamaitechnologies.com^
 @@||akamaized.net^
-@@||amazonaws.com^
 @@||aspnetcdn.com^
 @@||blog.cloudflare.com^
 @@||brightcove.net^
 @@||cdn.embedly.com^
 @@||cdn.jsdelivr.net^
-@@||cdn.optimizely.com^
 @@||cdn.vidible.tv^
-@@||cdn2.optimizely.com^
-@@||cdn3.optimizely.com^
 @@||challenges.cloudflare.com^
 @@||cloudflareaccess.com^
 @@||d2c8v52ll5s99u.cloudfront.net^
@@ -241,19 +192,14 @@
 @@||lastfm-img2.akamaized.net^
 @@||placeholdit.imgix.net^
 @@||players.brightcove.net^
-@@||s3.amazonaws.com^
 @@||secure.brightcove.com^
 @@||speed.cloudflare.com^
 @@||ssl.p.jwpcdn.com^
 @@||tedcdn.com^
 @@||widget-cdn.rpxnow.com^
 @@||www.cloudflare.com^
-
-! ---- Analitica/telemetria permitida deliberadamente (ver nota) ----
 @@||0.datadog.pool.ntp.org^
 @@||o33249.ingest.us.sentry.io^$important
-
-! ---- Otras utilidades y servicios varios ----
 @@||1drv.com^
 @@||adaway.org^
 @@||api.ipify.org^
@@ -292,10 +238,8 @@
 @@||jquery.com^
 @@||keystone.mwbsys.com^
 @@||life360.com^
-@@||npr-news.streaming.adswizz.com^
 @@||ns1.dropbox.com^
 @@||ns2.dropbox.com^
-@@||om.cbsi.com^
 @@||pbs.twimg.com^
 @@||placehold.it^
 @@||raspbian.raspberrypi.com^
@@ -318,17 +262,11 @@
 @@||videos.vidible.tv^
 @@||vidtech.cbsinteractive.com^
 @@||virustotal.com^
-@@||welcome.opendns.com^
-@@||opendns.com^
 @@||wp.com^
 @@||ws.audioscrobbler.com^
 @@||www.docker.com^
 @@||www.syncthing.net^
 @@||youtu.be^
-
-! ---- Excepciones candidatas para reforzar la fiabilidad (revisar y activar segun necesites) ----
-! OCSP/CRL de autoridades de certificacion muy comunes: si se bloquean, algunos sitios
-! y apps pueden mostrar errores de certificado o fallos de conexion dificiles de diagnosticar.
 @@||ocsp.digicert.com^
 @@||crl3.digicert.com^
 @@||crl4.digicert.com^
@@ -339,6 +277,3 @@
 @@||r10.o.lencr.org^
 @@||r11.o.lencr.org^
 
-! ---- A REVISAR: origen o proposito no confirmado, decide si conservarlas ----
-! @@||testcategory.com^
-! @@||www.internetbadguys.com^
