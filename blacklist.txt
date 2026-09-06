@@ -1,0 +1,28 @@
+# Lista negra propia para AdGuard Home
+# Generada a partir de consultas permitidas del cliente Casa, revisión 2026-09-07.
+# Sólo contiene telemetría, publicidad o analítica de alta confianza.
+
+# Microsoft: telemetría y eventos
+||events.data.microsoft.com^$important
+||events.data.msn.com^$important
+
+# LG webOS: publicidad y telemetría
+||cdpbeacon.lgtvcommon.com^$important
+||cdpbeacon2.lgtvcommon.com^$important
+||eic.ads.lgtvcommon.com^$important
+
+# Firebase/Google: registro técnico, no servicios funcionales generales
+||firebaselogging.googleapis.com^$important
+||firebaselogging-pa.googleapis.com^$important
+
+# Adobe: analítica, personalización y tag manager
+||aepxlg.adobe.com^$important
+||sstats.adobe.com^$important
+||assets.adobedtm.com^$important
+||p13n.adobe.io^$important
+||hbrcv.adobe.com^$important
+
+# Logitech: telemetría
+||datapipeline.logitech.io^$important
+||flow.logitech.io^$important
+||util.logitech.io^$important
